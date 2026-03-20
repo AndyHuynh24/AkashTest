@@ -37,8 +37,9 @@ class SimpleCNN(nn.Module):
 
 EPOCHS = 2
 BATCH_SIZE = 64
-OUTPUT_DIR = "/output"
+OUTPUT_DIR = os.path.join(os.path.dirname(os.path.abspath(__file__)), "output")
 os.makedirs(OUTPUT_DIR, exist_ok=True)
+print(f"Output directory: {OUTPUT_DIR}")
 
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 print(f"Using device: {device}")

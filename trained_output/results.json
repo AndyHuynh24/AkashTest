@@ -1,6 +1,6 @@
 {
-  "test_accuracy": 98.92,
-  "training_time": 13.9,
+  "test_accuracy": 98.85,
+  "training_time": 15.2,
   "epochs": 2,
   "device": "cuda"
 }
